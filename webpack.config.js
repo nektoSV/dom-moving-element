@@ -28,6 +28,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
-    new MiniCSSExtractPlugin()
-  ]
-}
+    new MiniCSSExtractPlugin({
+      ilename: '[name].css',
+			chunkFilename: '[id].css',
+    }),
+  ],
+};
+
