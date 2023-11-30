@@ -29,7 +29,7 @@ module.exports = {
       template: './src/index.html'
     }),
     new MiniCSSExtractPlugin({
-      ilename: '[name].css',
+      filename: '[name].css',
 			chunkFilename: '[id].css',
     }),
   ],
